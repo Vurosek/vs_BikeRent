@@ -5,7 +5,7 @@ local bikeRemovalTimer = nil
 
 ESX = exports["es_extended"]:getSharedObject()
 function SpawnBike()
-    local bikeHash = GetHashKey(Config.BikeModel1)
+    local bikeHash = GetHashKey(Config.BikeModel)
     RequestModel(bikeHash)
     while not HasModelLoaded(bikeHash) do
         Wait(1)
